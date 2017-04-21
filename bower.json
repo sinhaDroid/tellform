@@ -46,9 +46,10 @@
   },
   "resolutions": {
     "angular-bootstrap": "0.14.0",
-    "angular": "1.4.14",
+    "angular": "1.5.3",
     "angular-ui-select": "compiled",
-    "jspdf": "1.0.178"
+    "jspdf": "1.0.178",
+    "angular-ui-router": "^0.2.14"
   },
   "overrides": {
     "BOWER-PACKAGE": {
