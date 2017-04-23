@@ -7,9 +7,22 @@ TellForm 2.0.0
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3491e86eb7194308b8fc80711d736ede)](https://www.codacy.com/app/david-baldwin/tellform?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=whitef0x0/tellform&amp;utm_campaign=Badge_Grade)
 [![Gitter](https://badges.gitter.im/whitef0x0/tellform.svg)](https://gitter.im/whitef0x0/tellform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-TellForm is an *opensource alternative to TypeForm* built ontop of NodeJS that can create [stunning mobile-ready forms](https://tellform.com/examples) , surveys and questionnaires.
+> An *opensource alternative to TypeForm* that can create [stunning mobile-ready forms](https://tellform.com/examples) , surveys and questionnaires.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/whitef0x0/tellform/tree/master)
+
+## Table of Contents  
+
+- [Features](#features)
+- [How to Contribute](#how-to-contribute)
+- [Quickstart](#quickstart)
+- [Deploying with Docker](#deploying-with-docker)
+- [Testing your Application](#testing-your-application)
+- [Where to Get Help](#where-to-get-help)
+- [Sponsors](#sponsors)
+- [Backers](#backers)
+- [Contributors](#contributors)
+- [Mentions on the Web](#mentions-on-the-web)
 
 ## Features	
 
@@ -33,6 +46,12 @@ TellForm is an *opensource alternative to TypeForm* built ontop of NodeJS that c
 - Add Stripe/Payment Form field
 - Add Custom Background and Dropdown Field Images
 - Add File Upload Form Field
+
+## How to Contribute
+
+Please checkout our CONTRIBUTING.md on ways to contribute to TellForm.
+
+All contributors are eligible to get a free [TellForm Sticker](https://www.stickermule.com/marketplace/15987-tellform-round-sticker). All you have to do is submit a PR, get it accepted, email your address to polydaic [at] gmail.com and we'll send you a sticker that you can proudly put on your laptop.
 
 ## Quickstart
 
@@ -103,40 +122,9 @@ $ docker run --rm -p 3000:3000 --link some-redis:redis-db --link some-mongo:db t
                                                                                                    -p 80:80 \
 ```
 
-## Sponsors
-
-Does your company use TellForm? Help keep the project bug-free and feature rich by [sponsoring the project](https://opencollective.com/tellform#sponsor).
-
-<a href="https://m.do.co/c/a86fd8843e09">
-	<img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Logo_Horizontal_Blue-3db19536.png" width="70px">
-</a>
-<a href="https://getsentry.com/">
-	<img src="https://raw.githubusercontent.com/docker-library/docs/831b07a52f9ff6577c915afc41af8158725829f4/sentry/logo.png"
-	width="70px">
-</a>
-<a href="https://statuspage.io/">
-	<img src="https://dka575ofm4ao0.cloudfront.net/assets/base/logos/common-aececb0b4319b8fb61ac5b47a6983f96.png" width="70px">
-</a>
-
-<a href="https://www.stickermule.com/unlock?ref_id=0939360701">
-	<img src="http://bcsrq.com/wp-content/uploads/2014/04/StickerMuleLogo300.png" width="70px">
-</a>
-<a href="https://sparkpost.com/">
-	<img src="https://app.sparkpost.com/assets/images/sparkpost-logo-color.svg" width="70px">
-</a>
-
-<a href="https://therooststand.com/">
-	<img src="https://cdn.shopify.com/s/files/1/0192/8184/t/11/assets/logo.png?2608345842081938086" width="70px">
-</a>
-
-## Backers
-
-Love our work and community? [Become a backer](https://opencollective.com/tellform).
-
-<a href="https://opencollective.com/tellform/backers/0/website" target="_blank"><img src="https://opencollective.com/apex/backers/0/avatar"></a>
 
 ## Testing Your Application
-You can run the full test suite included with MEAN.JS with the test task:
+You can run the full test suite included with TellForm with the test task:
 
 ```
 $ grunt test
@@ -173,20 +161,58 @@ To calculate your client-side test coverage with Istanbul, run the coverage task
 $ grunt coverage:client
 ```
 
+
 ## Where to get help
 
 [Gitter Chat](https://gitter.im/whitef0x0/tellform)
 
 [Official Twitter](https://twitter.com/tellform_real)
 
-## Contributor list 
 
-[David Baldwynn](https://github.com/whitef0x0/)
+## Sponsors
 
-[Samuel Laulhau](https://github.com/lalop)
+Does your company use TellForm? Help keep the project bug-free and feature rich by [sponsoring the project](https://opencollective.com/tellform#sponsor).
 
-[Arun Pattnaik](https://github.com/arunpattnaik)
+<a href="https://m.do.co/c/a86fd8843e09" style="padding: 30px 0">
+	<img src="/docs/readme_logos/do_logo.png" height="30px">
+</a>
+<a href="https://getsentry.com/" style="padding: 30px 0">
+	<img src="/docs/readme_logos/sentry_logo.png" height="30px">
+</a>
+<a href="https://statuspage.io/" style="padding: 30px 0">
+	<img src="/docs/readme_logos/statuspage_logo.png" height="30px">
+</a>
+<br><br>
+<a href="https://www.stickermule.com/unlock?ref_id=0939360701" style="padding: 30px 0">
+	<img src="/docs/readme_logos/stickermule_logo.png" height="30px">
+</a>
+<a href="https://sparkpost.com/" style="padding: 30px 0">
+	<img src="/docs/readme_logos/sparkpost_logo.png" height="30px">
+</a>
 
+<a href="https://therooststand.com/" style="padding: 30px 0">
+	<img src="/docs/readme_logos/roost_logo.png" height="30px">
+</a>
+
+## Backers
+
+Love our work and community? [Become a backer](https://opencollective.com/tellform).
+
+<a href="https://opencollective.com/elliot" target="_blank">
+	<img src="https://opencollective.com/proxy/images/?src=https%3A%2F%2Fd1ts43dypk8bqh.cloudfront.net%2Fv1%2Favatars%2F6fd61b2c-62b6-438a-9168-bab7ef1489b8" height= "64">
+</a>
+
+<a href="https://opencollective.com/aldrnv" target="_blank">
+	<img src="https://opencollective.com/public/images/users/avatar-01.svg" height="64">
+</a>
+
+## Contributors 
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars2.githubusercontent.com/u/1160417?v=3" width="100px;"/><br /><sub>David Baldwynn</sub>](http://baldwynn.me)<br />[💻](https://github.com/tellform/TellForm/commits?author=whitef0x0 "Code") [🔧](#tool-whitef0x0 "Tools") [🚇](#infra-whitef0x0 "Infrastructure (Hosting, Build-Tools, etc)") [📖](https://github.com/tellform/TellForm/commits?author=whitef0x0 "Documentation") [💡](#example-whitef0x0 "Examples") [🎨](#design-whitef0x0 "Design") [🔍](#fundingFinding-whitef0x0 "Funding Finding") [👀](#review-whitef0x0 "Reviewed Pull Requests") [⚠️](https://github.com/tellform/TellForm/commits?author=whitef0x0 "Tests") | [<img src="https://avatars2.githubusercontent.com/u/313117?v=3" width="100px;"/><br /><sub>Samuel Laulhau</sub>](https://samuellaulhau.fr)<br />[💻](https://github.com/tellform/TellForm/commits?author=lalop "Code") [🌍](#translation-lalop "Translation") | [<img src="https://avatars0.githubusercontent.com/u/313507?v=3" width="100px;"/><br /><sub>Arun Pattnaik</sub>](http://arun.co)<br />[🎨](#design-arunpattnaik "Design") | [<img src="https://avatars0.githubusercontent.com/u/5405744?v=3" width="100px;"/><br /><sub>Thiên Toán</sub>](https://toanalien.com)<br />[🐛](https://github.com/tellform/TellForm/issues?q=author%3Atoanalien "Bug reports") [💻](https://github.com/tellform/TellForm/commits?author=toanalien "Code") [📖](https://github.com/tellform/TellForm/commits?author=toanalien "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/8615608?v=3" width="100px;"/><br /><sub>Adrian Portabales</sub>](https://github.com/AdrianP-)<br />[🐛](https://github.com/tellform/TellForm/issues?q=author%3AAdrianP- "Bug reports") [💻](https://github.com/tellform/TellForm/commits?author=AdrianP- "Code") | [<img src="https://avatars3.githubusercontent.com/u/8433587?v=3" width="100px;"/><br /><sub>Peter Thaleikis</sub>](https://github.com/spekulatius)<br />[📖](https://github.com/tellform/TellForm/commits?author=spekulatius "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/1247388?v=3" width="100px;"/><br /><sub>Mickaël Andrieu</sub>](http://www.mickael-andrieu.com)<br />[📖](https://github.com/tellform/TellForm/commits?author=mickaelandrieu "Documentation") |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars1.githubusercontent.com/u/1522464?v=3" width="100px;"/><br /><sub>Ahmad Luqman</sub>](https://github.com/ahmad-luqman)<br />[📖](https://github.com/tellform/TellForm/commits?author=ahmad-luqman "Documentation") | [<img src="https://avatars0.githubusercontent.com/u/3691490?v=3" width="100px;"/><br /><sub>Peter Dave Hello</sub>](https://www.peterdavehello.org/)<br />[📖](https://github.com/tellform/TellForm/commits?author=PeterDaveHello "Documentation") |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 ## Mentions on the Web
 
 [Mister Ad](http://start.mister-ad.biz/newsticker/open-source-alternative-zu-typeform-tellform-in-der-kurzvorstellung/)
@@ -204,6 +230,3 @@ $ grunt coverage:client
 [Betapage](https://betapage.co/startup/tellform)
 
 [Opensource.com](http://opensource.com/article/17/2/tools-online-surveys-polls)
-
-## Credits
-Inspired/built off the great work of the [MeanJS team](https://github.com/meanjs/) and [Typeform](http://typeform.com)
