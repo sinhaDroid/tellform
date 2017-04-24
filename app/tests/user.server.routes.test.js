@@ -31,7 +31,7 @@ describe('User CRUD tests', function() {
 		_User = {
 			email: credentials.email,
 			username: credentials.username,
-			password: credentials.password,
+			password: credentials.password
 		};
 
         //Initialize Session
@@ -52,7 +52,6 @@ describe('User CRUD tests', function() {
                     tmpUser.findOne({username: _User.username}, function (err, user) {
                         should.not.exist(err);
                         should.exist(user);
-                        _tmpUser = user;
 
                         _User.username.should.equal(user.username);
                         _User.firstName.should.equal(user.firstName);
@@ -66,7 +65,7 @@ describe('User CRUD tests', function() {
                                 if (VerifyErr) {
 					return done(VerifyErr);
 				}
-				
+
                                 (VerifyRes.text).should.equal('User successfully verified');
 
                                 userSession.post('/auth/signin')
@@ -88,8 +87,8 @@ describe('User CRUD tests', function() {
 
                                                 // Handle signout error
                                                 if (signoutErr) {
-							return done(signoutErr);
-						}
+													return done(signoutErr);
+												}
 
                                                 (signoutRes.text).should.equal('You have successfully logged out.');
 
@@ -102,8 +101,6 @@ describe('User CRUD tests', function() {
 		});
 
 	});
-
-	it(' > should be able to reset a User\'s password');
 
 	afterEach(function(done) {
 		User.remove().exec(function () {

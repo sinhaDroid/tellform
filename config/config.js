@@ -75,9 +75,9 @@ module.exports.getBowerOtherAssets = function() {
 /**
  * Helper Function for getJavascriptAssets and getFormJavaScriptAssets
  */
-var getAssets = function(includeTests, isFormJS){
+module.exports._getAssets = function(includeTests, isFormJS){
 	var unit_tests, js_assets;
-	
+
 	if(isFormJS) {
 		js_assets = this.assets.form_js;
 		unit_tests = this.assets.form_unit_tests;
@@ -85,14 +85,14 @@ var getAssets = function(includeTests, isFormJS){
 		js_assets = this.assets.js;
 		unit_tests = this.assets.unit_tests;
 	}
-	
+
 	var output = this.getGlobbedFiles(js_assets, 'public/', 'static/');
 
 	// To include tests
 	if (includeTests) {
 		output = _.union(output, this.getGlobbedFiles(unit_tests));
 	}
-	
+
 	return output;
 }
 
@@ -100,7 +100,14 @@ var getAssets = function(includeTests, isFormJS){
  * Get the modules JavaScript files
  */
 module.exports.getJavaScriptAssets = function(includeTests) {
-	return getAssets(includeTests, false);
+	return this._getAssets(includeTests, false);
+};
+
+/**
+ * Get the modules Form JavaScript files
+ */
+module.exports.getFormJavaScriptAssets = function(includeTests) {
+	return this._getAssets(includeTests, true);
 };
 
 /**
@@ -109,11 +116,4 @@ module.exports.getJavaScriptAssets = function(includeTests) {
 module.exports.getCSSAssets = function() {
 	var output = this.getGlobbedFiles(this.assets.css, 'public/', 'static/');
 	return output;
-};
-
-/**
- * Get the modules Form JavaScript files
- */
-module.exports.getFormJavaScriptAssets = function(includeTests) {
-	return getAssets(includeTests, true);
 };
